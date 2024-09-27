@@ -34,6 +34,65 @@
     border-radius: 50%;
 }
 
+.main-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 15px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
+    transition: box-shadow .2s ease-out, -webkit-box-shadow .2s ease-out;
+    color: #111;
+    text-align: left;
+    padding: 20px;
+}
+
+.card-image-container {
+    width: 100%;
+    height: 250px
+}
+
+.card-image {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%
+}
+
+.card-inner-box{
+    font-size: 16px;
+    font-weight: 700;
+    white-space: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 22px;
+    height: 46px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.card-bottom-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.card-button{
+    border: 0;
+    background: linear-gradient(45deg, #008AAE, #425691);
+    color: #fff;
+    border-radius: 10px;
+    width: 40%;
+    height: 40px;
+}
+
 @media screen and (max-width: 480px) {
     .side-heading {
         font-style: normal;
@@ -44,9 +103,11 @@
         width: 80%;
         margin: 20px;
     }
-    .div-sm-none{
+
+    .div-sm-none {
         display: none !important;
     }
+
     .donate-button {
         width: 80%;
         height: 40px;
@@ -62,6 +123,7 @@
         color: #425691;
         width: 80%;
     }
+
     .donate-button {
         width: 80%;
         height: 40px;
