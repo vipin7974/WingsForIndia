@@ -15,8 +15,8 @@ export default function Main() {
             Donate Now
           </div>
         </Grid>
-        <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className='div-center'>
-          <img src={Ngo} alt="Banner" width={500} height={500} className='ngo-image'/>
+        <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className='div-center div-sm-none'>
+          <img src={Ngo} alt="Banner" width={500} height={500} className='ngo-image' />
         </Grid>
       </Grid>
     </Box>
