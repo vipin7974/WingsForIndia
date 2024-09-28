@@ -122,6 +122,13 @@
     align-items: center;
 }
 
+/*  */
+
+.MuiAppBar-root{
+    background: #fff !important;
+    color: #000 !important;
+}
+
 /* header */
 
 .main-div {
@@ -384,13 +391,13 @@
     text-align: center;
     background: #413b79;
     padding: 10px;
-    height: 20px;
+    height: 40px;
 }
 
 .copy-rights-copyRightText {
     padding: 0 16px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     color: #fff;
     line-height: 24px;
 }
@@ -452,6 +459,10 @@
 
     .copy-rights-copyRightText {
         font-size: 14px;
+    }
+
+    .copy-rights-copyrights {
+        height: 60px;
     }
 }
 
