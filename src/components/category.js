@@ -1,3 +1,4 @@
+import Grid from '@mui/material/Grid2'
 import React, { useEffect } from 'react'
 
 export default function Category(props) {
@@ -7,15 +8,15 @@ export default function Category(props) {
     }, [])
 
     return (
-        <div class="campaigns_sectionContainer">
-            <div class="section-title_heading">
-                <div class="section-title_headingWrapper">
+        <Grid class="campaigns-sectionContainer">
+            <Grid class="section-title-heading">
+                <div class="section-title-headingWrapper">
                     <h2>{props.name}</h2>
                 </div>
-                {/* <div class="section-title_link">
+                {/* <div class="section-title-link">
                     View All Campaigns
                 </div> */}
-            </div>
-        </div>
+            </Grid>
+        </Grid>
     )
 }

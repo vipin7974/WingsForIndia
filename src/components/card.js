@@ -49,8 +49,8 @@ export default function Card(props) {
         </Box>
       </div>
       <div className='card-bottom-box'>
-        <div className='card-button div-center'>Share</div>
-        <div className='card-button div-center'>Donate</div>
+        <div className='button-gradient-btn button-gradient-gradient'>Share</div>
+        <div className='button-gradient-btn button-gradient-gradient'>Donate</div>
       </div>
     </Grid>
   )

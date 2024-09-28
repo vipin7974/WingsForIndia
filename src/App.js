@@ -6,6 +6,9 @@ import Card from './components/card';
 import Ngo from './assets/ngo.jpg'
 import Testimonials from './pages/testimonials';
 import Category from './components/category';
+import Footer from './pages/footer';
+import Mainfooter from './components/mainfooter';
+import Header from './pages/Header';
 
 const dummyData = [
   {
@@ -73,9 +76,10 @@ const testimonialData = [
 function App() {
   return (
     <Box>
+      <Header />
       <Main />
-      <Category name={'Categories'}/>
-      <Grid container sx={{ padding: '50px 20px' }}>
+      <Category name={'Categories'} />
+      <Grid container className="padding-35">
         {
           dummyData.map((e, i) => {
             return (
@@ -87,7 +91,7 @@ function App() {
         }
       </Grid>
       <Category name={'Testimonials'} />
-      <Grid container marginBlock={'50px'}>
+      <Grid container className="padding-35">
         {
           testimonialData.map((e, i) => {
             return (
@@ -98,6 +102,8 @@ function App() {
           })
         }
       </Grid>
+      <Footer />
+      <Mainfooter />
     </Box>
   );
 }
